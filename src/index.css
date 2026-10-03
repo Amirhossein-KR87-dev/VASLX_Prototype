@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  body {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    background-color: #FAF7F4;
+    color: #1b1411;
+  }
+}
+
+.tap-effect {
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tap-effect:active {
+  transform: scale(0.97);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2d9d2;
+  border-radius: 4px;
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
